@@ -1,0 +1,188 @@
+/**- Added by Morando Nicolo' rel.to.cardcontainer -**/
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: #fffff;
+  font-family: Arial, sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  background-color: #fffff;
+}
+
+.card {
+  margin: 20px;
+  width: 320px;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(51, 51, 51, 0.2);
+  transition: 400ms ease-in-out;
+}
+.card:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  box-shadow: 10px 10px 50px rgba(51, 51, 51, 0.2), 10px -10px 50px rgba(51, 51, 51, 0.2);
+}
+
+.card-content {
+  position: relative;
+  height: 90%;
+  padding: 2em;
+  background-color: fffff;
+}
+.card-content.with-bg {
+  background: url(https://i.pinimg.com/736x/5f/21/10/5f2110405c31693cf14ada829d66eee1.jpg) no-repeat center center;
+  background-size: cover;
+}
+.card-content header {
+  position: absolute;
+  bottom: 10px;
+}
+.card-content h1,
+.card-content h2 {
+  color: #fff;
+  line-height: 1.3;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px rgba(51, 51, 51, 0.5);
+}
+.card-content h1 {
+  font-size: 2em;
+}
+.card-content h2 {
+  margin: 8px 0;
+  font-size: 0.5em;
+  letter-spacing: 2px;
+}
+.card-content a {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 30px 0;
+  background: linear-gradient(#fff, #eceff1);
+  border-radius: 2px;
+  box-shadow: -1px 0 5px rgba(51, 51, 51, 0.1);
+  font-size: 0.6em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.card-content a:hover {
+  opacity: 0.9;
+}
+.card-content p {
+  margin-bottom: 30px;
+  color: rgba(68, 68, 68, 0.9);
+  font-family: "Merriweather", serif;
+  font-size: 0.8em;
+  line-height: 1.9;
+}
+.card-content p:first-child:first-letter {
+  float: left;
+  display: inline;
+  padding: 25px 10px 15px 0;
+  color: #333;
+  font-size: 5em;
+  line-height: 0.2;
+}
+
+.card-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10%;
+  box-shadow: -1px 0 5px rgba(51, 51, 51, 0.1);
+  font-size: 0.7em;
+}
+.card-nav a {
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.card-nav i {
+  font-size: 1.6em;
+}
+.card-nav li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 2px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #cfd8dc;
+}
+.card-nav li.active {
+  background-color: #333;
+}
+
+.comments {
+  position: relative;
+  padding: 2em;
+}
+.comments header {
+  margin-bottom: 30px;
+}
+.comments h1 {
+  font-size: 0.7em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.comments a {
+  position: absolute;
+  top: 27px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.comment {
+  display: flex;
+  padding: 10px 0;
+}
+.comment img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.comment h3,
+.comment h4 {
+  display: inline-block;
+  font-size: 0.6em;
+  font-family: "Merriweather", serif;
+}
+.comment h4 {
+  color: rgba(51, 51, 51, 0.4);
+}
+.comment h4:before {
+  content: "\25CF";
+  margin: 0 5px;
+}
+.comment p {
+  margin: 5px 0;
+  line-height: 1.8;
+  font-size: 0.6em;
+  font-family: "Merriweather", serif;
+}
